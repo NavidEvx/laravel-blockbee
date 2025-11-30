@@ -1,0 +1,34 @@
+{
+  "name": "navidevx/laravel-blockbee",
+  "description": "Laravel wrapper for BlockBee PHP library",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "NavidEvx",
+      "email": "navidevx@gmail.com"
+    }
+  ],
+  "require": {
+    "php": ">=7.2",
+    "ext-curl": "*",
+    "ext-json": "*",
+    "illuminate/support": "^10.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "NavidEvx\\BlockBee\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "NavidEvx\\BlockBee\\BlockBeeServiceProvider"
+      ],
+      "aliases": {
+        "BlockBee": "NavidEvx\\BlockBee\\Facades\\BlockBee"
+      }
+    }
+  },
+  "minimum-stability": "stable"
+}
